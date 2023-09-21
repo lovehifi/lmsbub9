@@ -15,3 +15,5 @@ else
 echo "File not found. Skipping..."
 fi
 
+systemctl daemon-reload
+systemctl restart logitechmediaserver-git.service
