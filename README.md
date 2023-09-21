@@ -6,4 +6,4 @@ Install
 ------------------
 ![Screenshot](screenshot.jpg)
 
-### rAudio version is available [[here](https://github.com/lovehifi/raudiobub)](https://github.com/lovehifi/raudiobub).
+### rAudio version is available [https://github.com/lovehifi/raudiobub](https://github.com/lovehifi/raudiobub).
