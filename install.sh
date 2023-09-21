@@ -29,7 +29,7 @@ systemctl restart logitechmediaserver-git.service
 
 echo "Install Finished"
 echo "--------------------"
-echo "NAS connection config"
+echo "NAS connection config: username, password, connect URL"
 echo "To change with nano: nano /srv/http/bub/config.inc.php"
 
 # wget -O - https://raw.githubusercontent.com/lovehifi/lmsbub9/main/install.sh | sh
