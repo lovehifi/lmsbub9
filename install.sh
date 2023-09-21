@@ -5,6 +5,7 @@ replacement="http://${hostname}"
 
 tar -xzvf menu-mat.tgz -C /opt/logitechmediaserver-git/prefs/
 tar -xzvf switchserver.tgz -C /opt/logitechmediaserver-git/HTML/EN/
+tar -xzvf bub-v9.tgz -C /srv/http/
 
 if [ -f "/srv/http/assets/js/main.js" ]; then
     sed -i "s|https://github.com/rern/rAudio/discussions|${replacement}:9000|g" /srv/http/assets/js/main.js
@@ -14,9 +15,3 @@ else
     echo "File not found. Skipping..."
 fi
 
-# directory="/opt/logitechmediaserver-git/cache/InstalledPlugins/Plugins/MaterialSkin"
-# if [ -d "$directory" ]; then
-	# tar -xzvf menu-mat.tgz -C /opt/logitechmediaserver-git/prefs/
-# else
-    # echo "None"
-# fi
