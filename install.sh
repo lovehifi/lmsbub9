@@ -27,4 +27,6 @@ echo "Restart LMS"
 systemctl daemon-reload
 systemctl restart logitechmediaserver-git.service
 
+echo "Install Finished"
+
 # wget -O - https://raw.githubusercontent.com/lovehifi/lmsbub9/main/install.sh | sh
