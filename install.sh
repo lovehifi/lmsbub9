@@ -14,6 +14,10 @@ tar -xzvf menu-mat.tgz -C /opt/logitechmediaserver-git/prefs/
 tar -xzvf switchserver.tgz -C /opt/logitechmediaserver-git/HTML/EN/
 tar -xzvf bub-v9.tgz -C /srv/http/
 
+if [ -e "/etc/systemd/system/bupnp.service" ]; then
+tar -xzvf bupnp.tgz -C /etc/systemd/system/
+fi
+
 if [ -f "/srv/http/assets/js/main.js" ]; then
 sed -i "s|https://github.com/rern/rAudio/discussions|${replacement}:9000|g" /srv/http/assets/js/main.js
 sed -i "s|http://raudio.local|${replacement}|g" /opt/logitechmediaserver-git/prefs/material-skin/actions.json
@@ -26,7 +30,4 @@ echo "Restart LMS"
 systemctl daemon-reload
 systemctl restart logitechmediaserver-git.service
 
-if [ -e "/etc/systemd/system/bupnp.service" ]; then
-tar -xzvf bupnp.tgz -C /etc/systemd/system/
-fi
 # wget -O - https://raw.githubusercontent.com/lovehifi/lmsbub9/main/install.sh | sh
