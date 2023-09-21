@@ -21,6 +21,7 @@ else
 echo "File not found. Skipping..."
 fi
 
+echo "Restart LMS"
 systemctl daemon-reload
 systemctl restart logitechmediaserver-git.service
 
