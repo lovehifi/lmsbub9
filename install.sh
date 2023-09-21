@@ -27,19 +27,7 @@ echo "Restart LMS"
 systemctl daemon-reload
 systemctl restart logitechmediaserver-git.service
 
-echo "Do you want to change your NAS connection config immediately with nano edit?"
-read -p "Enter 'Yes' or 'No': " answer
-
-echo "Do you want to change your NAS connection config immediately with nano edit?"
-read -p "Enter 'Yes' or 'No': " answer
-
-if [ "$answer" == "Yes" ]; then
-    nano /srv/http/bub/config.inc.php
-elif [ "$answer" == "No" ]; then
-    echo "Continuing execution without changing the NAS connection config."
-else
-    echo "Invalid choice. Please enter 'Yes' or 'No'."
-fi
+echo "To change your NAS connection config immediately with nano edit: nano /srv/http/bub/config.inc.php"
 
 echo "Install Finished"
 
