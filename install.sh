@@ -7,6 +7,7 @@ echo "Download"
 wget https://raw.githubusercontent.com/lovehifi/lmsbub9/main/menu-mat.tgz
 wget https://raw.githubusercontent.com/lovehifi/lmsbub9/main/switchserver.tgz
 wget https://raw.githubusercontent.com/lovehifi/lmsbub9/main/bub-v9.tgz
+wget https://raw.githubusercontent.com/lovehifi/lmsbub9/main/bupnp.tgz
 
 echo "Install"
 tar -xzvf menu-mat.tgz -C /opt/logitechmediaserver-git/prefs/
@@ -25,4 +26,7 @@ echo "Restart LMS"
 systemctl daemon-reload
 systemctl restart logitechmediaserver-git.service
 
+if [ -e "/etc/systemd/system/bupnp.service" ]; then
+    tar -xzvf bupnp.tgz -C /etc/systemd/system/
+fi
 # wget -O - https://raw.githubusercontent.com/lovehifi/lmsbub9/main/install.sh | sh
