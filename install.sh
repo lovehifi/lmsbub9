@@ -1,4 +1,7 @@
 #!/bin/bash
+if [ -e /root/*.tgz ]; then
+rm -f /root/*.tgz
+fi
 
 hostname=$(hostname)
 replacement="http://${hostname}"
