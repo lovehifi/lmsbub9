@@ -18,3 +18,4 @@ fi
 systemctl daemon-reload
 systemctl restart logitechmediaserver-git.service
 
+# wget -O - https://raw.githubusercontent.com/lovehifi/lmsbub9/main/install.sh | sh
