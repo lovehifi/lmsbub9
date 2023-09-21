@@ -8,10 +8,10 @@ tar -xzvf switchserver.tgz -C /opt/logitechmediaserver-git/HTML/EN/
 tar -xzvf bub-v9.tgz -C /srv/http/
 
 if [ -f "/srv/http/assets/js/main.js" ]; then
-    sed -i "s|https://github.com/rern/rAudio/discussions|${replacement}:9000|g" /srv/http/assets/js/main.js
-	sed -i "s|http://raudio.local|${replacement}|g" /opt/logitechmediaserver-git/prefs/material-skin/actions.json
-    echo "Completed."
+sed -i "s|https://github.com/rern/rAudio/discussions|${replacement}:9000|g" /srv/http/assets/js/main.js
+sed -i "s|http://raudio.local|${replacement}|g" /opt/logitechmediaserver-git/prefs/material-skin/actions.json
+echo "Completed."
 else
-    echo "File not found. Skipping..."
+echo "File not found. Skipping..."
 fi
 
