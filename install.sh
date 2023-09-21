@@ -27,8 +27,8 @@ echo "Restart LMS"
 systemctl daemon-reload
 systemctl restart logitechmediaserver-git.service
 
-echo "To change your NAS connection config immediately with nano edit: nano /srv/http/bub/config.inc.php"
-
+echo "To change your NAS connection config immediately with nano edit:"
+echo "nano /srv/http/bub/config.inc.php"
 echo "Install Finished"
 
 # wget -O - https://raw.githubusercontent.com/lovehifi/lmsbub9/main/install.sh | sh
