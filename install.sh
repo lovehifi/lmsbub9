@@ -2,9 +2,13 @@
 
 hostname=$(hostname)
 replacement="http://${hostname}"
+
+echo "Download"
 wget https://raw.githubusercontent.com/lovehifi/lmsbub9/main/menu-mat.tgz
 wget https://raw.githubusercontent.com/lovehifi/lmsbub9/main/switchserver.tgz
 wget https://raw.githubusercontent.com/lovehifi/lmsbub9/main/bub-v9.tgz
+
+echo "Install"
 tar -xzvf menu-mat.tgz -C /opt/logitechmediaserver-git/prefs/
 tar -xzvf switchserver.tgz -C /opt/logitechmediaserver-git/HTML/EN/
 tar -xzvf bub-v9.tgz -C /srv/http/
