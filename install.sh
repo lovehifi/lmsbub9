@@ -3,9 +3,6 @@ if [ -e /root/*.tgz ]; then
 rm -f /root/*.tgz
 fi
 
-hostname=$(hostname)
-replacement="http://${hostname}"
-
 echo "Download"
 wget https://raw.githubusercontent.com/lovehifi/lmsbub9/main/menu-mat.tgz
 wget https://raw.githubusercontent.com/lovehifi/lmsbub9/main/switchserver.tgz
@@ -21,6 +18,8 @@ if [ -e "/etc/systemd/system/bupnp.service" ]; then
 tar -xzvf bupnp.tgz -C /etc/systemd/system/
 fi
 
+hostname=$(hostname)
+replacement="http://${hostname}"
 if [ -f "/srv/http/assets/js/main.js" ]; then
 sed -i "s|https://github.com/rern/rAudio/discussions|${replacement}:9000|g" /srv/http/assets/js/main.js
 sed -i "s|http://raudio.local|${replacement}|g" /opt/logitechmediaserver-git/prefs/material-skin/actions.json
