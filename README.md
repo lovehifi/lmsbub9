@@ -5,3 +5,7 @@ Install
 >
 ------------------
 ![Screenshot](screenshot.jpg)
+
+## rAudio Alternative Version
+
+Find another version of rAudio at the following repository: [rAudio Alternative Version](https://github.com/lovehifi/raudiobub)
