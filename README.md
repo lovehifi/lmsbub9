@@ -5,7 +5,7 @@ Install
 >
 ------------------
 ![Screenshot](screenshot1.jpg)
-![Screenshot](screenshot.jpg)
+![Screenshot](screenshot3.jpg)
 
 ### Another version of LMS-rAudio
 >
