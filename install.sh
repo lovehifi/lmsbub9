@@ -1,6 +1,10 @@
 #!/bin/bash
-if [ -e /root/*.tgz ]; then
-rm -f /root/*.tgz
+# Check if any .tgz files exist in /root/
+if ls /root/*.tgz 1> /dev/null 2>&1; then
+  # Remove each .tgz file
+  for file in /root/*.tgz; do
+    rm -f "$file"
+  done
 fi
 
 echo "Download"
