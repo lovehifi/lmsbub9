@@ -21,7 +21,7 @@ hostname=$(hostname)
 replacement="http://${hostname}"
 if [ -f "/srv/http/assets/js/main.js" ]; then
 sed -i "s|https://github.com/rern/rAudio/discussions|${replacement}:9000|g" /srv/http/assets/js/main.js
-sed -i "s|http://raudio.local|${replacement}|g" /opt/logitechmediaserver-git/prefs/material-skin/actions.json
+sed -i "s|http://rAudio|${replacement}|g" /opt/logitechmediaserver-git/prefs/material-skin/actions.json
 echo "Completed."
 else
 echo "File not found. Skipping..."
