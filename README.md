@@ -11,4 +11,7 @@ Install
 >
 at this [https://github.com/lovehifi/lmsbub](https://github.com/lovehifi/lmsbub).
 >
+Change username, password, connect URL in this file:
+> /srv/http/bub/config.inc.php
+>
 ### rAudio version is available [https://github.com/lovehifi/raudiobub](https://github.com/lovehifi/raudiobub).
