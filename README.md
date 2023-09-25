@@ -5,12 +5,14 @@
 >
 >
 >
+---------------
 2./ WinSCP edit config (or nano edit): /srv/http/bub/config.inc.php
 Change username, pass, URL server (Your Nas, Server...) in this file:
 >
 Change username, password, and connect URL (Your Nas, Server... like http://yourserver:58050) in this file:
 > /srv/http/bub/config.inc.php
 >
+-----------------
 3. Go to the menu Extras, Music Source, choose Music and play.
 ------------------
 ![Screenshot](screenshot1.jpg)
