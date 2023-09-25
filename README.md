@@ -14,7 +14,7 @@ username, password, and connect URL (Your Nas, Server... like http://yourserver:
 >
 -----------------
 >
-3./ Go to the menu Extras, Music Source, choose Music and play.
+3./ Go to the menu Extras, Music Source, choose your music to play.
 >
 ------------------
 ![Screenshot](screenshot1.jpg)
