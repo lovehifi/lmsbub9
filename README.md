@@ -9,7 +9,7 @@
 2./ Change config
 >
 > Use WinSCP edit config (or nano edit) to change:
-username, password, and connect URL (Your Nas, Server... like http://yourserver:58050) in this file:
+username, password, and connect URL (Your Nas, Server http://yourserver:58050) in this file:
 > /srv/http/bub/config.inc.php
 >
 -----------------
