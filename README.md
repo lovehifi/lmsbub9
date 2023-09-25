@@ -6,7 +6,7 @@
 >
 >
 ---------------
-2./ Change config:
+2./ Change config
 >
 > Use WinSCP edit config (or nano edit) to change:
 username, password, and connect URL (Your Nas, Server... like http://yourserver:58050) in this file:
@@ -14,7 +14,7 @@ username, password, and connect URL (Your Nas, Server... like http://yourserver:
 >
 -----------------
 >
-3. Go to the menu Extras, Music Source, choose Music and play.
+3./ Go to the menu Extras, Music Source, choose Music and play.
 >
 ------------------
 ![Screenshot](screenshot1.jpg)
