@@ -1,10 +1,14 @@
 # LMSBub NAS for LMS-rAudio (ArchLinux)
 >
-Install
+1./ Install
 > wget -O - https://raw.githubusercontent.com/lovehifi/lmsbub9/main/install.sh | sh
 >
 >
-Change username, password, and connect URL (Your Nas, Server...) in this file:
+>
+2./ WinSCP edit config (or nano edit): /srv/http/bub/config.inc.php
+Change username, pass, URL server (Your Nas, Server...) in this file:
+>
+Change username, password, and connect URL (Your Nas, Server... like http://yourserver:58050) in this file:
 > /srv/http/bub/config.inc.php
 >
 ------------------
