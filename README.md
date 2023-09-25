@@ -4,7 +4,7 @@ Install
 > wget -O - https://raw.githubusercontent.com/lovehifi/lmsbub9/main/install.sh | sh
 >
 >
-Change username, password, connect URL in this file:
+Change username, password, and connect URL (Your Nas, Server...) in this file:
 > /srv/http/bub/config.inc.php
 >
 ------------------
